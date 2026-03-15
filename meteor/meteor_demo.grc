@@ -42,7 +42,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /Users/encse/projects/qpsk/2026-03-07_13-01-38_187500SPS_137900000Hz.cf32
+    file: /Users/encse/projects/radio/2026-03-15_07-39-19_166666SPS_137900000Hz.cf32
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -504,7 +504,7 @@ blocks:
     label: Input sample rate
     short_id: ''
     type: intx
-    value: '187500'
+    value: '166666'
   states:
     bus_sink: false
     bus_source: false

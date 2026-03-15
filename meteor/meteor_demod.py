@@ -71,7 +71,7 @@ import threading
 
 class meteor_demod(gr.top_block, Qt.QWidget):
 
-    def __init__(self, sample_rate=187500):
+    def __init__(self, sample_rate=166666):
         gr.top_block.__init__(self, "Meteor M N 2-x ,72k LRPT demodulator", catch_exceptions=True)
         Qt.QWidget.__init__(self)
         self.setWindowTitle("Meteor M N 2-x ,72k LRPT demodulator")
@@ -313,7 +313,7 @@ class meteor_demod(gr.top_block, Qt.QWidget):
         for c in range(1, 2):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.ccsds_image_decoder_0 = CcsdsImageDecoder()
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/Users/encse/projects/qpsk/2026-03-07_13-01-38_187500SPS_137900000Hz.cf32', False, 0, 0)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/Users/encse/projects/radio/2026-03-15_07-39-19_166666SPS_137900000Hz.cf32', False, 0, 0)
         self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
 
 
@@ -352,7 +352,7 @@ def argument_parser():
     description = 'Meteor M-N2 LRPT (72k) OQPSK demodulator'
     parser = ArgumentParser(description=description)
     parser.add_argument(
-        "--sample-rate", dest="sample_rate", type=intx, default=187500,
+        "--sample-rate", dest="sample_rate", type=intx, default=166666,
         help="Set Input sample rate [default=%(default)r]")
     return parser
 

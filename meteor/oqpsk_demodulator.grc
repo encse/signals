@@ -87,7 +87,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [280, 200.0]
+    coordinate: [296, 200.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_float_0_0
@@ -204,7 +204,7 @@ blocks:
     minoutbuf: '0'
     order: '4'
     use_snr: 'False'
-    w: '0.005'
+    w: '0.002'
   states:
     bus_sink: false
     bus_source: false
@@ -247,7 +247,7 @@ blocks:
     pfb_mf_taps: '[]'
     resamp_type: digital.IR_MMSE_8TAP
     sps: sps
-    ted_gain: '1.0'
+    ted_gain: '1'
     ted_type: digital.TED_GARDNER
     type: cc
   states:
