@@ -91,6 +91,9 @@ class Viterbi(gr.basic_block):
         self.decoded_b_caps = ndarray_to_capsule(self.decoded_b)
         self.renc_caps = ndarray_to_capsule(self.reencoded)
 
+    def forecast(self, noutput_items, ninputs):
+        return [self.BLOCK_BITS]
+
     def build_soft_input(self, iq_block, multiply_by_j):
         if self.history_iq > 0:
             self.full_iq[:self.history_iq] = self.prev_iq
